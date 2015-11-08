@@ -12,6 +12,7 @@
   string s1 = "BBAACD";
   string s2 = "CDBB";
   
+  // 執行次數 = 字串長度
   public bool IsRotation(string src, string des)
   {
     int srcLen = src.Length();
