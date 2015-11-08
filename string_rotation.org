@@ -26,7 +26,7 @@
         src[s_j] = src[s_j + 1];
       }
       
-      src[srcLen] = src[s_j + 1];  // 以首字元取代最後字元
+      src[srcLen] = src[s_j + 1];  // 以首字元取代最後字元後完成旋轉一次
       
       if(src.Indexof(des) == 0)
       {
