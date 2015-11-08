@@ -19,7 +19,7 @@
     for(int s_i = 0; s_i < srcLen; s_i++)
     {
       // 記下首字元
-      char tmpChar = src[s_i];
+      char tmpChar = src[0];
       // 從第2個字元開始，把字元依序前移一位
       for(int s_j = 0; s_j < srcLen - 1; s_j++)
       {
