@@ -1,0 +1,10 @@
+#+TITLE: Bulls and Cows (猜數字)
+
+* Solution
+#+begin_src CSharp
+public string getHint(string secret, string guess) {
+}
+#+end_src
+
+* References
+  + [[https://leetcode.com/discuss/67031/one-pass-java-solution][One pass Java solution]]
