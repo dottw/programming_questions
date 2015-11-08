@@ -12,22 +12,21 @@
   string s1 = "BBAACD";
   string s2 = "CDBB";
   
-  // 執行次數 = 字串長度
+
   public bool IsRotation(string src, string des)
   {
     int srcLen = src.Length();
-  
-    for(int s_i = 0; s_i < srcLen; s_i++)
+
+    for(int s_i = 0; s_i < srcLen; s_i++)　      // 執行次數 = 字串長度
     {
-      // 記下首字元
-      char tmpChar = src[0];
-      // 從第2個字元開始，把字元依序前移一位
-      for(int s_j = 0; s_j < srcLen - 1; s_j++)
+      char tmpChar = src[0];  // 記下首字元
+      
+      for(int s_j = 0; s_j < srcLen - 1; s_j++)  // 從第2個字元開始，把字元依序前移一位
       {
         src[s_j] = src[s_j + 1];
       }
-      // 以首字元取代最後字元
-      src[srcLen] = src[s_j + 1];
+      
+      src[srcLen] = src[s_j + 1];               // 以首字元取代最後字元
       
       if(src.Indexof(des) == 0)
       {
