@@ -5,8 +5,8 @@
   
   旋轉 ABCD -> BCDA -> CDAB -> DABC -> ABCD
 
-* 方法1(窮舉法)
-  列出所有 s1 旋轉組合並檢查 s2 是否包含其中
+** 方法1(窮舉法)
+   列出所有 s1 旋轉組合並檢查 s2 是否包含其中
   
 #+begin_src CSharp
   string s1 = "BBAACD";
@@ -34,6 +34,7 @@
     }
     return false;
   }
-  
-  
 #+end_src
+
+* 參考資料
+　+ [[http://stackoverflow.com/questions/2553522/interview-question-check-if-one-string-is-a-rotation-of-other-string][Check if one string is a rotation of other string]]
