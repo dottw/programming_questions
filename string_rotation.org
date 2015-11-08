@@ -1,6 +1,40 @@
 #+TITLE: 字串是否是旋轉另一個字串後的子字串
 
 * 題目
-  給予任意2字串(s1, s2)，請判斷 s2 是否為旋轉 s1 後的子字串。例如: s1 = ABCD 和 s2 = BCD，回傳 true。
+  給予任意 2 字串(s1, s2)，請判斷 s2 是否為旋轉 s1 後的子字串。例如: s1 = ABCD 和 s2 = BCD，回傳 true。
   
   旋轉 ABCD -> BCDA -> CDAB -> DABC -> ABCD
+
+* 方法1(窮舉法)
+  列出所有 s1 旋轉組合並檢查 s2 是否包含其中
+  
+#+begin_src CSharp
+  string s1 = "BBAACD";
+  string s2 = "CDBB";
+  
+  public bool IsRotation(string src, string des)
+  {
+    int srcLen = src.Length();
+  
+    for(int s_i = 0; s_i < srcLen; s_i++)
+    {
+      char tmpChar = src[s_i];
+      
+      for(int s_j = 0; s_j < srcLen - 1; s_j++)
+      {
+        src[s_j] = src[s_j + 1];
+      }
+      
+      src[srcLen] = src[s_j + 1];
+      
+      if(src.Indexof(des) == 0)
+      {
+        return true;
+      }
+    }
+    
+    return false;
+  }
+  
+  
+#+end_src
