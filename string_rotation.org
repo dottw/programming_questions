@@ -1,4 +1,6 @@
 #+TITLE: 字串是否是旋轉另一個字串後的子字串
 
 * 題目
-  Given two string s_1 and =s_2= how will you check if =s_1= is a rotated version of =s_2= ?
+  給予任意2字串(s1, s2)，請判斷 s2 是否為旋轉 s1 後的子字串。例如: s1 = ABCD 和 s2 = BCD，回傳 true。
+  
+  旋轉 ABCD -> BCDA -> CDAB -> DABC -> ABCD
