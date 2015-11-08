@@ -17,7 +17,7 @@
   {
     int srcLen = src.Length();
 
-    for(int s_i = 0; s_i < srcLen; s_i++)　      // 執行次數 = 字串長度
+    for(int s_i = 0; s_i < srcLen; s_i++)  // 執行次數 = 字串長度
     {
       char tmpChar = src[0];  // 記下首字元
       
@@ -26,7 +26,7 @@
         src[s_j] = src[s_j + 1];
       }
       
-      src[srcLen] = src[s_j + 1];               // 以首字元取代最後字元
+      src[srcLen] = src[s_j + 1];  // 以首字元取代最後字元
       
       if(src.Indexof(des) == 0)
       {
